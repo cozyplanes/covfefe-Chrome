@@ -1,0 +1,14 @@
+{
+"manifest_version": 2,
+    "name": "covfefe-Chrome",
+    "description": "Simple extension that replaces 'coffee' to 'covfefe'",
+    "version": "0.1",
+    "content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	]
+}
